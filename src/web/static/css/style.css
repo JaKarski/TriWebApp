@@ -1,0 +1,268 @@
+body {
+    background-color: #303030;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 !important;
+}
+
+header {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.foto{
+    height:auto;
+    width:auto;
+}
+
+nav {
+    width: 30%;
+    float: left;
+    font-size: 20px;
+}
+.red{
+    color: red;
+}
+.menu{
+    text-align: center;
+    font-size: 50px;
+    margin-right: 20%;
+}
+ol {
+    margin-top: unset;
+    margin-bottom: unset;
+    list-style: none;
+    line-height: 150%;
+}
+ol a {
+     color: #ffffff;
+     text-decoration: none;
+     display: block;
+}
+a {
+    text-decoration: none;
+    color: #828181;
+}
+ol > li{
+    width:60%;
+    text-align: center;
+    border-bottom: 2px dashed gray;
+}
+
+ol > li:hover{
+    background-color:#403f3f;
+}
+
+
+ol > li > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:none;
+}
+
+    ol > li:hover:last-child {
+        border-bottom: unset;
+    }
+
+ol > li:hover > ul{
+    display:block;
+}
+    ol > li > ul > li:first-child {
+        border-top: 2px dashed gray;
+    }
+
+ol > li > ul > li {
+    background-color: #403f3f;
+    position: relative;
+    z-index: 100;
+    border-bottom: 2px dashed gray;
+}
+    ol > li > ul > li:hover {
+        background-color: #616060;
+    }
+
+section{
+   float:right;
+   width:70%;
+}
+#content {
+    font-size: 20px;
+    width: 90%;
+    padding-bottom: 5px;
+}
+#logowanie {
+	background-position: right top;
+}
+
+#slider{
+    float: left;
+    width:90%;
+    height:90%;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+footer {
+    float: left;
+    margin-top: 10px;
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    border-top: 2px dashed gray;
+    padding-top:5px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+th, td {
+    border: 1px solid #ffffff;
+    width: 10%;
+}
+.selektor {
+    border-collapse: collapse;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+p {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+.pic{
+    margin-top:1%;
+}
+.pic img {
+    width: 48%;
+    margin: 0.5%;
+    height: 100%;
+    transition-duration: 1s;
+}
+.fotos {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.photo {
+    width: 100%;
+}
+
+.fotos:hover{
+     transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    z-index: 100;
+}
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+aside {
+    display: block;
+    text-transform: uppercase;
+}
+#button {
+    position: absolute;
+    bottom: -550px;
+    right: 80px;
+}
+
+#ankieta{
+    text-align:center;
+    margin-right:20%;
+}
+.start{
+    width:30%;
+    float:left;
+    margin-right:5%;
+}
+.bike {
+    text-align:center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+@media (max-width: 875px) {
+    #slider {
+        height: 0;
+        width: 0;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+    }
+    ol{
+        padding: 0;
+    }
+
+    ol > li {
+        width: auto;
+        text-align: center;
+        border-bottom: 1px dashed gray;
+    }
+    .menu {
+        font-size: 40px;
+        margin:0;
+    }
+    .sticky {
+        position: unset;
+        top: unset;
+        z-index: unset;
+    }
+    section {
+        padding-left:15%;
+        padding-right:5%;
+        float: none;
+        width: 80%;
+    }
+    header {
+        font-size: 50px;
+    }
+    .foto{
+        height:0;
+        width:0;
+    }
+    footer {
+        font-size: 15px;
+    }
+    selector{
+        width:100%;
+        height:100%;
+    }
+    #content{
+        font-size: 15px;
+    }
+    h2{
+        font-size:15px;
+    }
+}

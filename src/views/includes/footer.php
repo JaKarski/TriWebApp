@@ -1,0 +1,1 @@
+<footer><span class="red"> Tri</span> - dla każdego &copy; Kacper Karski - s186044 , Informatyka</footer>
